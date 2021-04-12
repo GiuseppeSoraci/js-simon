@@ -27,11 +27,14 @@ $(document).ready(function () {
     }
     console.log(numberList);
 
+    // Alert 
+    alert("Read the following numbers carefully to try to win: " + numberList);
+
 });
 
 /**********
 FUNCTIONS
 **********/
- function getRandomNumber(min, max) {
+function getRandomNumber(min, max) {
     return Math.floor(Math.random() * (max - min + 1)) + min;
 }
